@@ -1,0 +1,42 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\n\x00K\x00D\x00E\x00S\x00S)
+
+[Launch]
+Launch Configurations=Launch Configuration 0
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=KDESS
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Arguments=
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x02\x00\x00\x00\n\x00K\x00D\x00E\x00S\x00S\x00\x00\x00\n\x00K\x00D\x00E\x00S\x00S)
+Dependency Action=Build
+EnvironmentGroup=
+Executable=file:///home/kkardas/projects/KDESS
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Project Target=KDESS,KDESS
+Use External Terminal=false
+Working Directory=
+isExecutable=false
+
+[Project]
+VersionControlSupport=
+
+[QMake_Builder]
+Build_Folder=/home/kkardas/projects/KDESS/build
+Build_Type=0
+Extra_Arguments=
+Install_Prefix=
+QMake_Binary=/usr/bin/qmake
+
+[QMake_Builder][/home/kkardas/projects/KDESS/build]
+Build_Type=0
+Extra_Arguments=
+Install_Prefix=
+QMake_Binary=/usr/bin/qmake
+
+[SourceFileTemplates]
+LastUsedTemplate=/home/kkardas/.local/share/kdevfiletemplates/template_descriptions/cpp_basic.desktop
